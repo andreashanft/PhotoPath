@@ -57,6 +57,9 @@ final class MainViewModel {
                 self.pathDidChange(newPath: path)
             case .failure(let error):
                 DebugLogger.log("[Error] Location monitoring failed with error:\n\(error)")
+                if let pathError = error as? PathRecorderError, pathError == .aborted {
+                    return
+                }
                 self.onError?()
             }
         }

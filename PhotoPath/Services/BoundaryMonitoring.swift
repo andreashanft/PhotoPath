@@ -70,6 +70,7 @@ final class BoundaryMonitoring: NSObject, LocationMonitoringServiceType {
     }
     
     func stopMonitoring() {
+        onLocationUpdate = nil
         stopMonitoring(for: regionIdentifier)
     }
 
