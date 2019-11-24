@@ -7,6 +7,8 @@
 As a user while I go for a walk I want my journey documented by pictures from Flickr along my 
 path without having to hold my phone in my hand all the time.
 
+![Screenshot of app after launch](README/Screenshot-Splash.png)
+![Screenshot of feed](README/Screenshot-Feed.png)
 
 ## Challenges 
 
